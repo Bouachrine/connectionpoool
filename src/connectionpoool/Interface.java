@@ -74,7 +74,8 @@ public class Interface extends JFrame implements ActionListener {
 				f.afficher2(champ1,champ2);
 				
 			Interface2 k= new Interface2(); 
-			System.out.println(JDBCConnectionPool.connex);
+			JOptionPane.showMessageDialog(null,JDBCConnectionPool.connex);
+			
 			
 			/*JOptionPane.showMessageDialog(null,"Connexion etablie avec sucees"+c);*/
 		}
@@ -88,10 +89,11 @@ public class Interface extends JFrame implements ActionListener {
 		DataSource j=new DataSource();
 		j.remplir();
 
-	
-		System.out.println(JDBCConnectionPool.connex);
+		JOptionPane.showMessageDialog(null,JDBCConnectionPool.connex+ "\n");
+		
 		c=j.renvoieConex();
-		System.out.println(c);
+		JOptionPane.showMessageDialog(null,c);
+		
 		Interface i= new Interface();
 		i.setVisible(true);
 	}

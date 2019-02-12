@@ -15,7 +15,7 @@ public class JDBCConnectionPool {
 	}
 	 
 	public  static void remplir(){
-		for(int i=0; i<19;i++) { 
+		for(int i=0; i<2;i++) { 
 		connex.add(ConnectionBDD.getInst());
 		}
 		/*
@@ -39,7 +39,7 @@ public class JDBCConnectionPool {
 	public static void fermerConnection(Connection connect) {
 		
 		try {
-			for(int i=0; i<19; i++) {
+			for(int i=0; i<2; i++) {
        	 if (connect !=null) {
        		
        		 connect.close();
